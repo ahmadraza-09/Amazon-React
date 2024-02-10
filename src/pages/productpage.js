@@ -4,8 +4,8 @@ import Productcomp from "../components/productcomp";
 import '../productpage.css'
 
 
-
 const Productpage = () => {
+
     return (
       <>
       {<Headercomp/>}

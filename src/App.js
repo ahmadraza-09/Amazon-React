@@ -8,7 +8,6 @@ import Registerpage from './pages/registerpage';
 import Languagepage from './pages/languagepage';
 import Productpage from './pages/productpage';
 
-
 function App() {
   return (
     <>

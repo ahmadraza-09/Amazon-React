@@ -2,6 +2,26 @@
 
 
 const Productcomp = () => {
+
+    // Offer Dropdown
+    var dropdownIconDown = document.querySelector('.fa-angle-down');
+    var dropdownIconUp = document.querySelector('.fa-angle-up');
+    var offerDropdown = document.querySelector('.offer-dropdown');
+
+    function showOfferDropdown() {
+        dropdownIconDown.style.display = 'none';
+        dropdownIconUp.style.display = 'block';
+        offerDropdown.style.display = 'block';
+    }
+
+    function hideOfferDropdown() {
+        dropdownIconDown.style.display = 'block';
+        dropdownIconUp.style.display = 'none';
+        offerDropdown.style.display = 'none';
+    }
+
+
+
     return (
         <>
         {/* Main */}
@@ -120,11 +140,11 @@ const Productcomp = () => {
                     <div className="offer-dropdown-icons">
                     <i
                         className="fa-solid fa-angle-down"
-                        onclick="showOfferDropdown();"
+                        onclick={showOfferDropdown}
                     ></i>
                     <i
                         className="fa-solid fa-angle-up"
-                        onclick="hideOfferDropdown();"
+                        onclick={hideOfferDropdown}
                     ></i>
                     </div>
                 </div>
