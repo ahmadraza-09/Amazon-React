@@ -1,18 +1,16 @@
-import logo from '../Images/amazon-logo.png';
-import flag from '../Images/india-flag-icon.png';
 
 const Footercomp = () => {
     return (
         <>
         {/* Footer */}
         <footer onclick="removeOpacity();">
-        <div class="back-to-top">
+        <div className="back-to-top">
             <a href="#top"> Back to Top </a>
         </div>
 
-        <div class="footer-contents">
-            <div class="footer-text-content">
-            <div class="footer-text-box">
+        <div className="footer-contents">
+            <div className="footer-text-content">
+            <div className="footer-text-box">
                 <h3>Get to Know Us</h3>
                 <ul>
                 <li><a href="#">About Us</a></li>
@@ -22,7 +20,7 @@ const Footercomp = () => {
                 </ul>
             </div>
 
-            <div class="footer-text-box">
+            <div className="footer-text-box">
                 <h3>Connect with Us</h3>
                 <ul>
                 <li><a href="#">Facebook</a></li>
@@ -31,7 +29,7 @@ const Footercomp = () => {
                 </ul>
             </div>
 
-            <div class="footer-text-box">
+            <div className="footer-text-box">
                 <h3>Make Money with Us</h3>
                 <ul>
                 <li><a href="#">Sell on Amazon</a></li>
@@ -45,7 +43,7 @@ const Footercomp = () => {
                 </ul>
             </div>
 
-            <div class="footer-text-box">
+            <div className="footer-text-box">
                 <h3>Let Us Help You</h3>
                 <ul>
                 <li><a href="#">COVID-19 and Amazon</a></li>
@@ -58,61 +56,61 @@ const Footercomp = () => {
             </div>
             </div>
 
-            <div class="footer-country-content">
-            <div class="footer-language flex-div">
-                <img src={logo} alt="" />
-                <div class="footer-language-box flex-div">
+            <div className="footer-country-content">
+            <div className="footer-language flex-div">
+                <img src="Images/amazon-logo.png" alt="" />
+                <div className="footer-language-box flex-div">
                 <img src="Images/globe.png" alt="" />
                 <p>English</p>
-                <div class="footer-arrow">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <i class="fa-solid fa-caret-down"></i>
+                <div className="footer-arrow">
+                    <i className="fa-solid fa-caret-up"></i>
+                    <i className="fa-solid fa-caret-down"></i>
                 </div>
 
                 {/* Language Dropdown */}
-                <div class="footer-lang-dropdown">
-                    <div class="footer-langauage-default flex-div lang-div">
+                <div className="footer-lang-dropdown">
+                    <div className="footer-langauage-default flex-div lang-div">
                     <input name="language" type="radio" />
                     <h3>English - EN</h3>
                     </div>
 
-                    <div class="footer-language-list">
-                    <div class="flex-div lang-div">
+                    <div className="footer-language-list">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>हिन्दी - HI</h3>
                     </div>
-                    <div class="flex-div lang-div">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>தமிழ் - TA</h3>
                     </div>
-                    <div class="flex-div lang-div">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>తెలుగు - TE</h3>
                     </div>
-                    <div class="flex-div lang-div">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>ಕನ್ನಡ - KN</h3>
                     </div>
-                    <div class="flex-div lang-div">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>മലയാളം - ML</h3>
                     </div>
-                    <div class="flex-div lang-div">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>বাংলা - BN</h3>
                     </div>
-                    <div class="flex-div lang-div">
+                    <div className="flex-div lang-div">
                         <input name="language" type="radio" />
                         <h3>मराठी - MR</h3>
                     </div>
 
-                    <a href="#" class="footer-lang-learn-more">Learn More</a>
+                    <a href="#" className="footer-lang-learn-more">Learn More</a>
                     </div>
 
                     {/* Language Dropdown Footer  */}
-                    <div class="footer-lang-dropdown-footer">
-                    <div class="footer-footer-paragraph flex-div">
-                        <img src={flag} alt="Indian Flag" />
+                    <div className="footer-lang-dropdown-footer">
+                    <div className="footer-footer-paragraph flex-div">
+                        <img src="Images/india-flag-icon.png" alt="Indian Flag" />
                         <p>You are shopping on Amazon.in</p>
                     </div>
                     </div>
@@ -120,7 +118,7 @@ const Footercomp = () => {
                 </div>
             </div>
 
-            <div class="footer-country">
+            <div className="footer-country">
                 <ul>
                 <li><a href="#">Australia</a></li>
                 <li><a href="#">Brazil</a></li>
@@ -144,10 +142,10 @@ const Footercomp = () => {
             </div>
         </div>
 
-        <div class="footer-links-copyright">
-            <div class="footer-links">
-            <div class="footer-links1">
-                <ul class="link-box">
+        <div className="footer-links-copyright">
+            <div className="footer-links">
+            <div className="footer-links1">
+                <ul className="link-box">
                 <h3>AbeBooks</h3>
                 <li>
                     <a href="#"
@@ -156,7 +154,7 @@ const Footercomp = () => {
                     >
                 </li>
                 </ul>
-                <ul class="link-box">
+                <ul className="link-box">
                 <h3>Amazon Web Services</h3>
                 <li>
                     <a href="#"
@@ -165,7 +163,7 @@ const Footercomp = () => {
                     >
                 </li>
                 </ul>
-                <ul class="link-box">
+                <ul className="link-box">
                 <h3>Audible</h3>
                 <li>
                     <a href="#"
@@ -174,7 +172,7 @@ const Footercomp = () => {
                     >
                 </li>
                 </ul>
-                <ul class="link-box">
+                <ul className="link-box">
                 <h3>IMDb</h3>
                 <li>
                     <a href="#"
@@ -184,8 +182,8 @@ const Footercomp = () => {
                 </li>
                 </ul>
             </div>
-            <div class="footer-links2">
-                <ul class="link-box">
+            <div className="footer-links2">
+                <ul className="link-box">
                 <h3>Shopbop</h3>
                 <li>
                     <a href="#"
@@ -194,7 +192,7 @@ const Footercomp = () => {
                     >
                 </li>
                 </ul>
-                <ul class="link-box">
+                <ul className="link-box">
                 <h3>Amazon Business</h3>
                 <li>
                     <a href="#"
@@ -203,7 +201,7 @@ const Footercomp = () => {
                     >
                 </li>
                 </ul>
-                <ul class="link-box">
+                <ul className="link-box">
                 <h3>Prime Now</h3>
                 <li>
                     <a href="#"
@@ -212,7 +210,7 @@ const Footercomp = () => {
                     >
                 </li>
                 </ul>
-                <ul class="link-box">
+                <ul className="link-box">
                 <h3>Amazon Prime Music</h3>
                 <li>
                     <a href="#"
@@ -224,13 +222,13 @@ const Footercomp = () => {
             </div>
             </div>
 
-            <div class="footer-copyright">
-            <div class="copyright-links">
+            <div className="footer-copyright">
+            <div className="copyright-links">
                 <a href="#">Conditions of Use & Sale</a>
                 <a href="#">Privacy Notice</a>
                 <a href="#">Intrest-Based Ads</a>
             </div>
-            <div class="copyright-text">
+            <div className="copyright-text">
                 © 1996-2024, Amazon.com, Inc. or its affiliates
             </div>
             </div>

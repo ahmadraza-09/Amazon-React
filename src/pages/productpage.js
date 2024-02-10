@@ -1,6 +1,9 @@
 import Footercomp from "../components/footercomp";
 import Headercomp from "../components/headercomp";
 import Productcomp from "../components/productcomp";
+import '../productpage.css'
+
+
 
 const Productpage = () => {
     return (

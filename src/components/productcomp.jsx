@@ -1,61 +1,63 @@
 
+
+
 const Productcomp = () => {
     return (
         <>
         {/* Main */}
-        <main>
+        <div className="product-main-section">
         {/* Product Main Container */}
-        <div class="product-container">
+        <div className="product-container">
             {/* Product Left Container */}
-            <div class="product-left-container">
-            <div class="product-image-list">
-                <div class="product-img-box">
+            <div className="product-left-container">
+            <div className="product-image-list">
+                <div className="product-img-box">
                 <img
-                    src="productImage/product-img1.png"
+                    src="Images/product-img1.png"
                     alt=""
-                    onmouseover="changeImageSrc('productImage/product-img1.png');"
+                    onmouseover="changeImageSrc('Images/product-img1.png');"
                 />
                 </div>
-                <div class="product-img-box">
+                <div className="product-img-box">
                 <img
-                    src="productImage/product-img2.png"
+                    src="Images/product-img2.png"
                     alt=""
-                    onmouseover="changeImageSrc('productImage/product-img2.png');"
+                    onmouseover="changeImageSrc('Images/product-img2.png');"
                 />
                 </div>
-                <div class="product-img-box">
+                <div className="product-img-box">
                 <img
-                    src="productImage/product-img3.png"
+                    src="Images/product-img3.png"
                     alt=""
-                    onmouseover="changeImageSrc('productImage/product-img3.png');"
+                    onmouseover="changeImageSrc('Images/product-img3.png');"
                 />
                 </div>
-                <div class="product-img-box">
+                <div className="product-img-box">
                 <img
-                    src="productImage/product-img4.png"
+                    src="Images/product-img4.png"
                     alt=""
-                    onmouseover="changeImageSrc('productImage/product-img4.png');"
+                    onmouseover="changeImageSrc('Images/product-img4.png');"
                 />
                 </div>
-                <div class="product-img-box">
+                <div className="product-img-box">
                 <img
-                    src="productImage/product-img5.png"
+                    src="Images/product-img5.png"
                     alt=""
-                    onmouseover="changeImageSrc('productImage/product-img5.png');"
+                    onmouseover="changeImageSrc('Images/product-img5.png');"
                 />
                 </div>
-                <div class="product-img-box">
+                <div className="product-img-box">
                 <img
-                    src="productImage/product-img6.png"
+                    src="Images/product-img6.png"
                     alt=""
-                    onmouseover="changeImageSrc('productImage/product-img6.png');"
+                    onmouseover="changeImageSrc('Images/product-img6.png');"
                 />
                 </div>
             </div>
 
-            <div class="product-image">
+            <div className="product-image">
                 <img
-                src="productImage/product-img1.png"
+                src="Images/product-img1.png"
                 alt=""
                 id="product-image"
                 />
@@ -63,26 +65,26 @@ const Productcomp = () => {
             </div>
 
             {/* Product Right Container */}
-            <div class="product-right-container">
+            <div className="product-right-container">
             {/* Product Details Left */}
-            <div class="product-details-left">
+            <div className="product-details-left">
                 {/* Product Name Section */}
-                <div class="product-name-section">
+                <div className="product-name-section">
                 <a href="#">Visit the Majestic Man Store</a>
                 <h2>Majestic Man Men Slim Fit Casual Shirt</h2>
-                <div class="product-rating">
-                    <div class="rating">
+                <div className="product-rating">
+                    <div className="rating">
                     <p>3.8</p>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div className="stars">
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-regular fa-star"></i>
                     </div>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i className="fa-solid fa-chevron-down"></i>
 
-                    <div class="rating-dropdown"></div>
+                    <div className="rating-dropdown"></div>
                     </div>
                     <p>
                     <a href="#">635 ratings</a>
@@ -93,41 +95,41 @@ const Productcomp = () => {
                 </div>
 
                 {/* Product Price Section */}
-                <div class="product-price-section">
-                <div class="product-price-discount">
+                <div className="product-price-section">
+                <div className="product-price-discount">
                     <p>-69%</p>
                     <p><sup>₹</sup>458</p>
                 </div>
-                <div class="product-mrp">
+                <div className="product-mrp">
                     <p>M.R.P.:</p>
                     <p>₹1,499</p>
                 </div>
-                <div class="product-tax">
+                <div className="product-tax">
                     <p>Inclusive of all taxes</p>
                 </div>
                 </div>
 
                 {/* Product Offer Section */}
-                <div class="product-offer-section">
-                <div class="offer-top-section">
-                    <div class="offer-img">
-                    <img src="productImage/offer-img.png" alt="" />
+                <div className="product-offer-section">
+                <div className="offer-top-section">
+                    <div className="offer-img">
+                    <img src="Images/offer-img.png" alt="" />
                     <h3>Offers</h3>
                     </div>
 
-                    <div class="offer-dropdown-icons">
+                    <div className="offer-dropdown-icons">
                     <i
-                        class="fa-solid fa-angle-down"
+                        className="fa-solid fa-angle-down"
                         onclick="showOfferDropdown();"
                     ></i>
                     <i
-                        class="fa-solid fa-angle-up"
+                        className="fa-solid fa-angle-up"
                         onclick="hideOfferDropdown();"
                     ></i>
                     </div>
                 </div>
 
-                <div class="offer-dropdown">
+                <div className="offer-dropdown">
                     <h3>Partner Offers</h3>
                     <p>Get GST invoice and save up to 28% on business</p>
                     <a href="#">1 offer </a>
@@ -135,94 +137,94 @@ const Productcomp = () => {
                 </div>
 
                 {/* Facility Slider Section */}
-                <div class="facility-slider-section">
-                <div class="facility-slider-wrapper">
-                    <button id="prev-slide" class="slide-button">
-                    <i class="fa-solid fa-chevron-left"></i>
+                <div className="facility-slider-section">
+                <div className="facility-slider-wrapper">
+                    <button id="prev-slide" className="slide-button">
+                    <i className="fa-solid fa-chevron-left"></i>
                     </button>
-                    <ul class="facility-list">
-                    <div class="facility-box-slider">
-                        <div class="facility-box-image">
+                    <ul className="facility-list">
+                    <div className="facility-box-slider">
+                        <div className="facility-box-image">
                         <img
-                            class="image-item"
-                            src="productImage/facility-img1.png"
+                            className="image-item"
+                            src="Images/facility-img1.png"
                             alt="img-1"
                         />
                         </div>
-                        <div class="facility-text">
+                        <div className="facility-text">
                         <p>10 days Return & Exchange</p>
                         </div>
                     </div>
-                    <div class="facility-box-slider">
-                        <div class="facility-box-image">
+                    <div className="facility-box-slider">
+                        <div className="facility-box-image">
                         <img
-                            class="image-item"
-                            src="productImage/facility-img2.png"
+                            className="image-item"
+                            src="Images/facility-img2.png"
                             alt="img-1"
                         />
                         </div>
-                        <div class="facility-text">
+                        <div className="facility-text">
                         <p>Pay on Delivery</p>
                         </div>
                     </div>
-                    <div class="facility-box-slider">
-                        <div class="facility-box-image">
+                    <div className="facility-box-slider">
+                        <div className="facility-box-image">
                         <img
-                            class="image-item"
-                            src="productImage/facility-img3.png"
+                            className="image-item"
+                            src="Images/facility-img3.png"
                             alt="img-1"
                         />
                         </div>
-                        <div class="facility-text">
+                        <div className="facility-text">
                         <p>Free Delivery</p>
                         </div>
                     </div>
-                    <div class="facility-box-slider">
-                        <div class="facility-box-image">
+                    <div className="facility-box-slider">
+                        <div className="facility-box-image">
                         <img
-                            class="image-item"
-                            src="productImage/facility-img4.png"
+                            className="image-item"
+                            src="Images/facility-img4.png"
                             alt="img-1"
                         />
                         </div>
-                        <div class="facility-text">
+                        <div className="facility-text">
                         <p>Top Brand</p>
                         </div>
                     </div>
-                    <div class="facility-box-slider">
-                        <div class="facility-box-image">
+                    <div className="facility-box-slider">
+                        <div className="facility-box-image">
                         <img
-                            class="image-item"
-                            src="productImage/facility-img5.png"
+                            className="image-item"
+                            src="Images/facility-img5.png"
                             alt="img-1"
                         />
                         </div>
-                        <div class="facility-text">
+                        <div className="facility-text">
                         <p>Amazon Delivered</p>
                         </div>
                     </div>
-                    <div class="facility-box-slider">
-                        <div class="facility-box-image">
+                    <div className="facility-box-slider">
+                        <div className="facility-box-image">
                         <img
-                            class="image-item"
-                            src="productImage/facility-img6.png"
+                            className="image-item"
+                            src="Images/facility-img6.png"
                             alt="img-1"
                         />
                         </div>
-                        <div class="facility-text">
+                        <div className="facility-text">
                         <p>Secure transaction</p>
                         </div>
                     </div>
                     </ul>
-                    <button id="next-slide" class="slide-button">
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <button id="next-slide" className="slide-button">
+                    <i className="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
                 </div>
 
                 {/* Product Size and Color */}
-                <div class="product-size-color">
-                <div class="product-size">
+                <div className="product-size-color">
+                <div className="product-size">
                     <label for="">Size</label>
                     <select name="" id="">
                     <option value="">Select</option>
@@ -236,74 +238,74 @@ const Productcomp = () => {
                     </select>
                 </div>
 
-                <div class="product-color">
-                    <label>Colour: <span class="color-name"></span></label>
-                    <div class="product-img-colors">
+                <div className="product-color">
+                    <label>Colour: <span className="color-name"></span></label>
+                    <div className="product-img-colors">
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img1.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img1.jpg')"
                     >
-                        <img src="productImage/product-color-img1.jpg" alt="" />
+                        <img src="Images/product-color-img1.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img2.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img2.jpg')"
                     >
-                        <img src="productImage/product-color-img2.jpg" alt="" />
+                        <img src="Images/product-color-img2.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img3.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img3.jpg')"
                     >
-                        <img src="productImage/product-color-img3.jpg" alt="" />
+                        <img src="Images/product-color-img3.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img4.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img4.jpg')"
                     >
-                        <img src="productImage/product-color-img4.jpg" alt="" />
+                        <img src="Images/product-color-img4.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img5.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img5.jpg')"
                     >
-                        <img src="productImage/product-color-img5.jpg" alt="" />
+                        <img src="Images/product-color-img5.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img6.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img6.jpg')"
                     >
-                        <img src="productImage/product-color-img6.jpg" alt="" />
+                        <img src="Images/product-color-img6.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img7.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img7.jpg')"
                     >
-                        <img src="productImage/product-color-img7.jpg" alt="" />
+                        <img src="Images/product-color-img7.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img8.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img8.jpg')"
                     >
-                        <img src="productImage/product-color-img8.jpg" alt="" />
+                        <img src="Images/product-color-img8.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img9.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img9.jpg')"
                     >
-                        <img src="productImage/product-color-img9.jpg" alt="" />
+                        <img src="Images/product-color-img9.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img10.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img10.jpg')"
                     >
-                        <img src="productImage/product-color-img10.jpg" alt="" />
+                        <img src="Images/product-color-img10.jpg" alt="" />
                     </div>
                     <div
-                        class="product-img"
-                        onmouseover="changeImageColor('productImage/product-color-img11.jpg')"
+                        className="product-img"
+                        onmouseover="changeImageColor('Images/product-color-img11.jpg')"
                     >
-                        <img src="productImage/product-color-img11.jpg" alt="" />
+                        <img src="Images/product-color-img11.jpg" alt="" />
                     </div>
                     </div>
                     <a href="#">Size Chart</a>
@@ -311,7 +313,7 @@ const Productcomp = () => {
                 </div>
 
                 {/* Product Details Content */}
-                <div class="product-details-content">
+                <div className="product-details-content">
                 <h3>Product details</h3>
                 <table>
                     <tr>
@@ -346,13 +348,13 @@ const Productcomp = () => {
                 </div>
 
                 {/* About This Item */}
-                <div class="about-this-item">
-                <div class="see-more" onclick="seeMoreFucntion();">
-                    <i class="fa-solid fa-angle-down"></i>
+                <div className="about-this-item">
+                <div className="see-more" onclick="seeMoreFucntion();">
+                    <i className="fa-solid fa-angle-down"></i>
                     <a>See more</a>
                 </div>
 
-                <div class="about-this-item-top">
+                <div className="about-this-item-top">
                     <h3>About this item</h3>
                     <ul>
                     <li>
@@ -382,7 +384,7 @@ const Productcomp = () => {
                     </ul>
                 </div>
 
-                <div class="about-this-item-bottom">
+                <div className="about-this-item-bottom">
                     <h3>Additional Information</h3>
                     <table>
                     <tr>
@@ -403,21 +405,21 @@ const Productcomp = () => {
                     </tr>
                     </table>
 
-                    <div class="see-less" onclick="seeLessFucntion();">
-                    <i class="fa-solid fa-angle-up"></i>
+                    <div className="see-less" onclick="seeLessFucntion();">
+                    <i className="fa-solid fa-angle-up"></i>
                     <a>See less</a>
                     </div>
                 </div>
                 </div>
 
                 {/* Quantity Offer */}
-                <div class="quantity-offer">
+                <div className="quantity-offer">
                 <h3>
                     The maximum order quantity for this product is limited to 5
                     units per customer
                 </h3>
-                <div class="quantity-offer-image">
-                    <img src="productImage/quantity-img.png" alt="" />
+                <div className="quantity-offer-image">
+                    <img src="Images/quantity-img.png" alt="" />
                     <p>
                     Please note that orders which exceed the quantity limit will
                     be auto-canceled. This is applicable across sellers.
@@ -427,25 +429,25 @@ const Productcomp = () => {
             </div>
 
             {/* Product Details Right */}
-            <div class="product-details-right">
-                <h3 class="product-price"><sup>₹</sup>458<sup>00</sup></h3>
+            <div className="product-details-right">
+                <h3 className="product-price"><sup>₹</sup>458<sup>00</sup></h3>
 
-                <p class="product-delivery-time">
+                <p className="product-delivery-time">
                 <a href="#">FREE delivery</a> <b>Monday, 5 February</b> on orders
                 dispatched by Amazon over ₹499. <a href="#">Details</a>
                 </p>
 
-                <p class="delivery-time-offer">
+                <p className="delivery-time-offer">
                 Or fastest delivery <b>Today</b>. Order within
                 <span>9 hrs 1 min</span>. <a href="#">Details</a>
                 </p>
 
-                <div class="delivery-address">
-                <i class="fa-solid fa-location-dot"></i>
+                <div className="delivery-address">
+                <i className="fa-solid fa-location-dot"></i>
                 <a href="#">Delivering to Delhi 110002 - Update location</a>
                 </div>
 
-                <div class="product-stock">
+                <div className="product-stock">
                 <h4>In stock</h4>
                 <table>
                     <tr>
@@ -458,7 +460,7 @@ const Productcomp = () => {
                     <td><a href="#">Polestar Etail</a></td>
                     </tr>
                 </table>
-                <div class="stock-quantity">
+                <div className="stock-quantity">
                     <label>Quantity:</label>
                     <select>
                     <option>1</option>
@@ -475,22 +477,22 @@ const Productcomp = () => {
                 </div>
                 </div>
 
-                <div class="buy-cart-button">
+                <div className="buy-cart-button">
                 <button>Add to Cart</button>
                 <button>Buy Now</button>
                 </div>
 
-                <div class="secure-transaction">
-                <i class="fa-solid fa-lock"></i>
+                <div className="secure-transaction">
+                <i className="fa-solid fa-lock"></i>
                 <a href="#">Secure transaction</a>
                 </div>
 
-                <div class="add-to-gift">
+                <div className="add-to-gift">
                 <input type="checkbox" />
                 <p>Add gift options</p>
                 </div>
 
-                <div class="add-to-wishlist">
+                <div className="add-to-wishlist">
                 <button>Add to Wish List</button>
                 </div>
             </div>
@@ -498,41 +500,41 @@ const Productcomp = () => {
         </div>
 
         {/* Product Review Section */}
-        <div class="product-review-section">
+        <div className="product-review-section">
             {/* Product Review Left */}
-            <div class="product-review-left">
-            <div class="product-review-head">
-                <img src="productImage/top-brand.png" alt="" />
+            <div className="product-review-left">
+            <div className="product-review-head">
+                <img src="Images/top-brand.png" alt="" />
                 <h3>Majestic Man</h3>
             </div>
 
-            <div class="product-rating-count-box">
-                <div class="product-rating-count">
-                <img src="productImage/correct-sign.png" alt="" />
+            <div className="product-rating-count-box">
+                <div className="product-rating-count">
+                <img src="Images/correct-sign.png" alt="" />
                 <p>84% positive ratings from 10K+ customers</p>
                 </div>
 
-                <div class="product-rating-count">
-                <img src="productImage/correct-sign.png" alt="" />
+                <div className="product-rating-count">
+                <img src="Images/correct-sign.png" alt="" />
                 <p>50K+ recent orders from this brand</p>
                 </div>
             </div>
             </div>
 
             {/* Product Review Right */}
-            <div class="product-review-right">
+            <div className="product-review-right">
             <p>Highly rated by customers for</p>
-            <div class="rated-tags">
-                <div class="rated-tag">
-                <img src="productImage/rated-thumb.png" alt="" />
+            <div className="rated-tags">
+                <div className="rated-tag">
+                <img src="Images/rated-thumb.png" alt="" />
                 <p>value for money</p>
                 </div>
-                <div class="rated-tag">
-                <img src="productImage/rated-thumb.png" alt="" />
+                <div className="rated-tag">
+                <img src="Images/rated-thumb.png" alt="" />
                 <p>good color</p>
                 </div>
-                <div class="rated-tag">
-                <img src="productImage/rated-thumb.png" alt="" />
+                <div className="rated-tag">
+                <img src="Images/rated-thumb.png" alt="" />
                 <p>good cloth</p>
                 </div>
             </div>
@@ -540,9 +542,9 @@ const Productcomp = () => {
         </div>
 
         {/* Product Details Section */}
-        <div class="product-details-section">
+        <div className="product-details-section">
             <h2>Product details</h2>
-            <div class="details">
+            <div className="details">
             <p>Product Dimensions : <span>25 x 22 x 2 cm; 230 Grams</span></p>
             <p>Date First Available : <span>13 December 2022</span></p>
             <p>Manufacturer : <span>Polestar Etail</span></p>
@@ -564,40 +566,40 @@ const Productcomp = () => {
             </p>
 
             {/* Product Rating Dropdown Section */}
-            <div class="flex-div">
+            <div className="flex-div">
                 <p>Customer Reviews:</p>
-                <span class="product-rating-section">
+                <span className="product-rating-section">
                 <p>3.8</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                <div className="stars">
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
 
-                <div class="rating-dropdown2"></div>
+                <div className="rating-dropdown2"></div>
                 </span>
 
-                <a href="#" class="rating-number-count">641 ratings</a>
+                <a href="#" className="rating-number-count">641 ratings</a>
             </div>
             </div>
         </div>
 
         {/* Product Description Section */}
-        <div class="product-description-section">
+        <div className="product-description-section">
             <h2>Product Description</h2>
-            <div class="product-description-images">
-            <img src="productImage/description-img1.jpeg" alt="" />
-            <img src="productImage/description-img2.jpeg" alt="" />
+            <div className="product-description-images">
+            <img src="Images/description-img1.jpeg" alt="" />
+            <img src="Images/description-img2.jpeg" alt="" />
             <h2>Majestic Man Checkered Slim fit Casual Shirt</h2>
             <p>
                 Truly comfortable and easy to wear in every season it is insulating
                 in winter and breathable in summer. Refresh your wardrobe with this
                 Shirt.
             </p>
-            <img src="productImage/description-img3.jpeg" alt="" />
+            <img src="Images/description-img3.jpeg" alt="" />
             <h2>
                 Stylish and trending full-sleeve casual checkered shirt for casual &
                 smart casual wear
@@ -606,7 +608,7 @@ const Productcomp = () => {
                 This shirt has been designed to keep the latest trends in occasional
                 casual fashion.
             </p>
-            <img src="productImage/description-img4.jpeg" alt="" />
+            <img src="Images/description-img4.jpeg" alt="" />
             <h2>
                 Style -
                 <span
@@ -625,78 +627,78 @@ const Productcomp = () => {
                 Shrinkage Post Washing</span
                 >
             </h2>
-            <img src="productImage/description-img5.jpeg" alt="" />
+            <img src="Images/description-img5.jpeg" alt="" />
             </div>
         </div>
 
         {/* Info Search Section */}
-        <div class="info-search-section">
+        <div className="info-search-section">
             <h2>Looking for specific info?</h2>
-            <div class="info-search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <div className="info-search-box">
+            <i className="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search in reviews, Q&A..." />
             </div>
         </div>
 
         {/* Customer Reviews Section */}
-        <div class="customer-review-section">
+        <div className="customer-review-section">
             {/* Customer Review Section Left */}
-            <div class="customer-review-section-left">
+            <div className="customer-review-section-left">
             <h1>Customer reviews</h1>
-            <div class="customer-review-box">
-                <div class="stars-line">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+            <div className="customer-review-box">
+                <div className="stars-line">
+                <div className="stars">
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
 
                 <p>3.8 out of 5</p>
                 </div>
 
-                <p class="rating-text-line">643 global ratings</p>
+                <p className="rating-text-line">643 global ratings</p>
 
-                <div class="review-filter-bar-section">
-                <div class="review-filter">
+                <div className="review-filter-bar-section">
+                <div className="review-filter">
                     <a href="#">5 star</a>
-                    <div class="filter-box"></div>
+                    <div className="filter-box"></div>
                     <a href="#">45%</a>
                 </div>
-                <div class="review-filter">
+                <div className="review-filter">
                     <a href="#">4 star</a>
-                    <div class="filter-box"></div>
+                    <div className="filter-box"></div>
                     <a href="#">25%</a>
                 </div>
-                <div class="review-filter">
+                <div className="review-filter">
                     <a href="#">3 star</a>
-                    <div class="filter-box"></div>
+                    <div className="filter-box"></div>
                     <a href="#">10%</a>
                 </div>
-                <div class="review-filter">
+                <div className="review-filter">
                     <a href="#">2 star</a>
-                    <div class="filter-box"></div>
+                    <div className="filter-box"></div>
                     <a href="#">6%</a>
                 </div>
-                <div class="review-filter">
+                <div className="review-filter">
                     <a href="#">1 star</a>
-                    <div class="filter-box"></div>
+                    <div className="filter-box"></div>
                     <a href="#">14%</a>
                 </div>
 
                 <label
-                    class="how-rating-calculated"
+                    className="how-rating-calculated"
                     for="show-rating-text"
                     onclick="showRatingText()"
                 >
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i className="fa-solid fa-angle-down"></i>
                     <p>How are ratings calculated?</p>
                 </label>
 
                 <input type="checkbox" id="show-rating-text" />
 
-                <p class="rating-calculated-text">
+                <p className="rating-calculated-text">
                     To calculate the overall star rating and percentage breakdown by
                     star, we don’t use a simple average. Instead, our system
                     considers things like how recent a review is and if the reviewer
@@ -705,7 +707,7 @@ const Productcomp = () => {
                 </p>
                 </div>
 
-                <div class="review-this-product">
+                <div className="review-this-product">
                 <h1>Review this product</h1>
 
                 <p>Share your thoughts with other customers</p>
@@ -716,9 +718,9 @@ const Productcomp = () => {
             </div>
 
             {/* Customer Review Section Right */}
-            <div class="customer-review-section-right"></div>
+            <div className="customer-review-section-right"></div>
         </div>
-        </main>
+        </div>
         </>
     );
 }

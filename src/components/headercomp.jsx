@@ -1,7 +1,3 @@
-import logo from '../Images/amazon-logo.png';
-import cart from '../Images/Shopping-Cart.png';
-import flag from '../Images/india-flag-icon.png';
-
 
 const Headercomp = () => {
     return (
@@ -16,7 +12,7 @@ const Headercomp = () => {
 
                 {/* Nav Logo */}
                 <div className="nav-logo border">
-                    <a href="index.html"><img src={logo} alt="Amazon Logo"/> </a>
+                    <a href="index.html"><img src="Images/amazon-logo.png" alt="Amazon Logo"/> </a>
                     <p>.in</p>
                 </div>
 
@@ -60,7 +56,7 @@ const Headercomp = () => {
                 {/* Nav Language  */}
                 <div className="nav-lang border" onmouseover="showMainOpacity();" onmouseout="removeOpacity();">
                     <div className="nav-lang-icon">
-                        <img src={flag} alt="Indian Flag"/>
+                        <img src="Images/india-flag-icon.png" alt="Indian Flag"/>
                     </div>
                     
                     <div className="lang-section" >
@@ -111,7 +107,7 @@ const Headercomp = () => {
                             {/* Language Dropdown Footer */}
                             <div className="lang-dropdown-footer">
                                 <div className="footer-paragraph flex-div">
-                                    <img src={flag} alt="Indian Flag"/>
+                                    <img src="Images/india-flag-icon.png" alt="Indian Flag"/>
                                     <p>You are shopping on Amazon.in</p>
                                 </div>
 
@@ -178,7 +174,7 @@ const Headercomp = () => {
 
                 {/* Nav Cart */}
                 <div className="nav-cart border">
-                    <img src={cart} alt=""/>
+                    <img src="Images/Shopping-Cart.png" alt=""/>
                     <p>Cart</p>
                 </div>
             </div>
