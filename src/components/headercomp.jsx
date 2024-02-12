@@ -1,5 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 
 const Headercomp = () => {
+
+    const navigate = useNavigate();
+
     return (
         <>
         <header id="#top" >
@@ -12,7 +17,7 @@ const Headercomp = () => {
 
                 {/* Nav Logo */}
                 <div className="nav-logo border">
-                    <a href="index.html"><img src="Images/amazon-logo.png" alt="Amazon Logo"/> </a>
+                    <a onClick={() => {navigate('/')}}><img src="Images/amazon-logo.png" alt="Amazon Logo"/> </a>
                     <p>.in</p>
                 </div>
 
@@ -54,7 +59,7 @@ const Headercomp = () => {
                 </div>
 
                 {/* Nav Language  */}
-                <div className="nav-lang border" onmouseover="showMainOpacity();" onmouseout="removeOpacity();">
+                <div className="nav-lang border" onmouseover="showMainOpacity();" onmouseout="removeOpacity();" onClick={() => {navigate('/language')}}>
                     <div className="nav-lang-icon">
                         <img src="Images/india-flag-icon.png" alt="Indian Flag"/>
                     </div>
@@ -127,8 +132,8 @@ const Headercomp = () => {
                         <i className="fa-solid fa-sort-down"></i>
                         <ul className="nav-dropdown">
                             <div className="nav-login">
-                                <a href="./Login/login.html"><button>Sign in</button></a>
-                                <p>New customer ? <a href="./Signup/signup.html"><span>Start here.</span></a></p>
+                                <a href="" onClick={() => {navigate('/login')}}><button>Sign in</button></a>
+                                <p>New customer ? <a href="" onClick={() => {navigate('/register')}}><span>Start here.</span></a></p>
                             </div>
 
                             <div className="nav-list-account">
@@ -173,7 +178,7 @@ const Headercomp = () => {
                 </div>
 
                 {/* Nav Cart */}
-                <div className="nav-cart border">
+                <div className="nav-cart border" onClick={() => {navigate('/cart')}}>
                     <img src="Images/Shopping-Cart.png" alt=""/>
                     <p>Cart</p>
                 </div>
@@ -269,7 +274,7 @@ const Headercomp = () => {
                     <a href="#" className="border2"><li>Customer Service</li></a>
                     <a href="#" className="border2"><li>New Releases</li></a>
                     <a href="#" className="border2"><li>Home & Kitchen</li></a>
-                    <a href="Product Page/product.html" className="border2"><li>Fashion</li></a>
+                    <a onClick={() => {navigate('/product')}} className="border2"><li>Fashion</li></a>
                 </ul>
             </div>
         </header>

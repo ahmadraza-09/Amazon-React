@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 
 const Registercomp = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
     <div className="register-header-section">
       <div className="login-logo">
-        <a href="../index.html"
+        <a onClick={() => {navigate('/')}}
           ><img src="../Images/login-logo.png" alt="Amazon Logo" />
         </a>
         <p>.in</p>
@@ -49,7 +54,7 @@ const Registercomp = () => {
         <div className="buy-for-work">
           <div>
             Already have an account?
-            <a href="../Login/login.html"
+            <a onClick={() => {navigate('/login')}}
               >Sign in <i className="fa-solid fa-caret-right"></i
             ></a>
           </div>
