@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 
-
 const Headercomp = () => {
 
     const navigate = useNavigate();
@@ -14,6 +13,82 @@ const Headercomp = () => {
 
             {/* Navbar */}
             <div className="navbar">
+
+                {/* Humbergur on 768px */}
+                <label for="check" className="humbergur-menu" onclick="showMainOpacity(); showHeaderOpacity();" >
+                    <label for="check" className="open-menu"><i className="fa-solid fa-bars"></i></label>
+                </label>
+
+                <input type="checkbox" id="check"/>
+
+
+                {/* Humbergurmenu Bar */}
+                <div className="humbergur-menu-bar">
+
+                    <div className="hello-signin">
+                        <div className="user-profile">
+                            <i className="fa-solid fa-user"></i>
+                        </div>
+                        <h3>Hello, sign in</h3>
+
+                        <label for="check" className="close-menu" onclick="removeOpacity();"><i className="fa-solid fa-xmark"></i></label> 
+                    </div>
+
+                    <div className="humbergur-sections">
+
+                        <div className="trending-content">
+                            <h3>Trending</h3>
+                            <ul className="trending-links">
+                                <li><a href="#">Best Sellers</a></li>
+                                <li><a href="#">New Releases</a></li>
+                                <li><a href="#">Movers and Shakers</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="digital-content trending-content">
+                            <h3>Digital Content And Devices</h3>
+                            <ul className="trending-links">
+                                <li><a href="#">Amazon miniTV- Free entertainment</a></li>
+                                <li><a href="#">Echo & Alexa</a></li>
+                                <li><a href="#">Fire TV</a></li>
+                                <li><a href="#">Kindle E-Readers & eBooks</a></li>
+                                <li><a href="#">Audible Audiobooks</a></li>
+                                <li><a href="#">Amazon Prime Video</a></li>
+                                <li><a href="#">Amazon Prime Music</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="shop-category-content trending-content">
+                            <h3>Shop By Category</h3>
+                            <ul className="trending-links">
+                                <li><a href="#">Mobiles, Computers</a></li>
+                                <li><a href="#">TV, Appliances, Electronics</a></li>
+                                <li><a onClick={() => {navigate('/product')}}>Men's Fashion</a></li>
+                                <li><a href="#">Women's Fashion</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="programs-features-content trending-content">
+                            <h3>Programs & Features</h3>
+                            <ul className="trending-links">
+                                <li><a href="#">Amazon Pay</a></li>
+                                <li><a href="#">Gift Cards & Mobile Recharges</a></li>
+                                <li><a href="#">Amazon Launchpad</a></li>
+                                <li><a href="#">Handloom and Handicrafts</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="help-settings-content trending-content">
+                            <h3>Help & Settings</h3>
+                            <ul className="trending-links">
+                                <li><a href="#">Your Account</a></li>
+                                <li><a href="#">Customer Sevice</a></li>
+                                <li><a onClick={() => {navigate('/login')}}>Sign in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
 
                 {/* Nav Logo */}
                 <div className="nav-logo border">
@@ -228,7 +303,7 @@ const Headercomp = () => {
                             <ul className="trending-links">
                                 <li><a href="#">Mobiles, Computers</a></li>
                                 <li><a href="#">TV, Appliances, Electronics</a></li>
-                                <li><a href="#">Men's Fashion</a></li>
+                                <li><a onClick={() => {navigate('/product')}}>Men's Fashion</a></li>
                                 <li><a href="#">Women's Fashion</a></li>
                             </ul>
                         </div>
@@ -263,14 +338,14 @@ const Headercomp = () => {
                 {/* Menus List Options */}
                 <ul className="menu-ops">
                     <a href="#" className="border2"><li>Fresh</li></a>
-                    <a href="#" className="border2"><li>Amazon mini TV</li></a>
-                    <a href="#" className="border2"><li>Sell</li></a>
-                    <a href="#" className="border2"><li>Best Sellers</li></a>
+                    <a href="#" className="border2 remove-menu"><li>Amazon mini TV</li></a>
+                    <a href="#" className="border2 remove-menu"><li>Sell</li></a>
+                    <a href="#" className="border2 remove-menu"><li>Best Sellers</li></a>
                     <a href="#" className="border2"><li>Today's Deals</li></a>
                     <a href="#" className="border2"><li>Mobiles</li></a>
                     <a href="#" className="border2"><li>Electronics</li></a>
-                    <a href="#" className="border2"><li>Prime</li></a>
-                    <a href="#" className="border2"><li>Gift Ideas</li></a>
+                    <a href="#" className="border2 remove-menu"><li>Prime</li></a>
+                    <a href="#" className="border2 remove-menu"><li>Gift Ideas</li></a>
                     <a href="#" className="border2"><li>Customer Service</li></a>
                     <a href="#" className="border2"><li>New Releases</li></a>
                     <a href="#" className="border2"><li>Home & Kitchen</li></a>

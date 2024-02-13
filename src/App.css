@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -64,13 +65,6 @@ img {
   display: none;
 }
 
-/* For Mobile */
-.mobile-navbar,
-.location-find,
-.category-slider {
-  display: none;
-}
-
 /* Navbar */
 .navbar {
   width: 100%;
@@ -83,6 +77,11 @@ img {
   padding: 0 10px;
   position: fixed;
   z-index: 990;
+}
+
+.navbar>label {
+  color: #fff;
+  display: none;
 }
 
 .nav-logo {
@@ -525,6 +524,7 @@ span {
   padding-left: 20px;
   position: relative;
   position: fixed;
+  color: #fff;
 }
 
 .hello-signin .user-profile {
@@ -641,6 +641,7 @@ span {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.8s ease;
 }
 
 .back-to-top a {
@@ -720,6 +721,10 @@ span {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
+}
+
+.humbergur-sections .nav-lang-signin {
+  display: none;
 }
 
 /* Footer Language Dropdown */

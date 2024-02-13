@@ -223,14 +223,14 @@ const Footercomp = () => {
             </div>
 
             <div className="footer-copyright">
-            <div className="copyright-links">
-                <a href="#">Conditions of Use & Sale</a>
-                <a href="#">Privacy Notice</a>
-                <a href="#">Intrest-Based Ads</a>
-            </div>
-            <div className="copyright-text">
-                © 1996-2024, Amazon.com, Inc. or its affiliates
-            </div>
+                <div className="copyright-links">
+                    <a href="#">Conditions of Use & Sale</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Intrest-Based Ads</a>
+                </div>
+                <div className="copyright-text">
+                    © 1996-2024, Amazon.com, Inc. or its affiliates
+                </div>
             </div>
         </div>
         </footer>

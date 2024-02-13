@@ -498,6 +498,7 @@ const Homecomp = () => {
                     <i className="fa-solid fa-chevron-right"></i>
                 </button>
                 </div>
+                
                 <div className="slider-scrollbar">
                 <div className="scrollbar-track">
                     <div className="scrollbar-thumb"></div>
