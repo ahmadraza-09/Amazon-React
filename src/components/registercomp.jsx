@@ -1,9 +1,41 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 
 const Registercomp = () => {
 
   const navigate = useNavigate();
+  const[yourname, getYourname] = useState('');
+  const[mobilenumber, getMobilenumber] = useState('');
+  const[email, getEmail] = useState('');
+  const[password, getPassword] = useState('');
+    const yournameHandler =(event)=>{
+        getYourname(event.target.value);
+    }
+    const mobilenumberHandler = (event)=>{
+        getMobilenumber(event.target.value);
+    }
+
+    const emailHandler = (event)=>{
+        getEmail(event.target.value);
+    }
+    const passwordHandler = (event)=>{
+        getPassword(event.target.value);
+    }
+    const verifyHandler = (e)=>{
+        e.preventDefault();
+        const registrationData = {yourname: yourname, email: email, password: password, mobilenumber: mobilenumber}
+        // console.log('Name:-'+yourname + 'Mobile Number:-'+mobilenumber + 'Email:- '+email + 'Password: '+password) 
+        return axios.post('apipath', registrationData).then((response) => {
+          console.log(registrationData);
+        })
+        getYourname('')
+        getMobilenumber('')
+        getEmail('')
+        getPassword('')
+        
+    }
 
   return (
     <>
@@ -17,12 +49,12 @@ const Registercomp = () => {
     </div>
 
     {/* Main */}
-    <div className="register-main-section">
+    <form className="register-main-section">
       <div className="login-box">
         <h3>Create Account</h3>
         <div className="input-box">
           <label>Your name</label>
-          <input type="text" placeholder="First and last name" />
+          <input type="text" name="yourname" value={yourname} onChange={yournameHandler} placeholder="First and Last name" />
         </div>
         <div className="input-box">
           <label>Mobile number</label>
@@ -34,23 +66,23 @@ const Registercomp = () => {
                 <i className="fa-solid fa-sort-down"></i>
               </div>
             </div>
-            <input type="text" placeholder="Mobile number" />
+            <input type="text" name="mobilenumber" value={mobilenumber} onChange={mobilenumberHandler} placeholder="Mobile number" />
           </div>
         </div>
         <div className="input-box">
           <label>Email (optional)</label>
-          <input type="text" />
+          <input type="text" name="email" value={email} onChange={emailHandler}/>
         </div>
         <div className="input-box">
           <label>Password</label>
-          <input type="password" placeholder="At least 6 characters" />
+          <input type="password" name="password" value={password} onChange={passwordHandler} placeholder="At least 6 characters" />
           <div className="alert-box">Passwords must be at least 6 characters.</div>
         </div>
         <p>
           To verify your number, we will send you a text message with a
           temporary code. Message and data rates may apply.
         </p>
-        <button>Verify mobile number</button>
+        <button type="submit" value="registration" onClick={verifyHandler}>Verify mobile number</button>
         <div className="buy-for-work">
           <div>
             Already have an account?
@@ -73,7 +105,7 @@ const Registercomp = () => {
           </p>
         </div>
       </div>
-    </div>
+    </form>
 
     <div className="register-footer-section">
       <div className="links-copyright">

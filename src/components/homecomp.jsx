@@ -1,4 +1,5 @@
 const Homecomp = () => {
+
     return (
         <>
         {/* Main */}
@@ -11,13 +12,13 @@ const Homecomp = () => {
             {/* Hero Slider */}
             <div className="slider">
             <section className="main-slider">
-                <div className="left-button slider-button" onclick="moveNext();">
+                <div className="left-button slider-button">
                 <i className="fa-solid fa-chevron-left"></i>
                 </div>
 
-                <img className="slider-image" alt="" onclick="stopSlideShow();" />
+                <img className="slider-image" alt=""/>
 
-                <div className="right-button slider-button" onclick="movePrevious();">
+                <div className="right-button slider-button">
                 <i className="fa-solid fa-chevron-right"></i>
                 </div>
             </section>
