@@ -27,7 +27,7 @@ const Registercomp = () => {
         e.preventDefault();
         const registrationData = {yourname: yourname, email: email, password: password, mobilenumber: mobilenumber}
         // console.log('Name:-'+yourname + 'Mobile Number:-'+mobilenumber + 'Email:- '+email + 'Password: '+password) 
-        return axios.post('apipath', registrationData).then((response) => {
+        return axios.post('http://localhost:8080/auth/registeration', registrationData).then((response) => {
           console.log(registrationData);
         })
         getYourname('')
